@@ -600,8 +600,235 @@
       </div>
     </div>
   </div>
+  <!-- MORTAGE MODIFICATION (CALCULADORA) -->
+	<div class="contact_area white_background" id="contact">
+  <div class="container">
+
+    <!-- SECTION TITLE -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title t_center">
+          <h2>Mortgage Modification</h2>
+          <div class="em-image1">
+            <img src="assets/images/icon.png" alt="title image" />
+          </div>
+          <p class="text-alignm1">Affordability Stability Evaluation (Non-Loan)</p>
+        </div>
+
+        <!-- PRE-CALCULATOR EXPLANATION -->
+        <div class="mm-help">
+          <strong>Important:</strong> This tool does <strong>not</strong> calculate loan payments or refinancing terms.
+          It evaluates <strong>housing affordability stability</strong> under a <strong>non-lending</strong> institutional framework.
+          Monthly inputs are converted to <strong>annual values internally</strong> for uniform calculations.
+        </div>
+      </div>
+    </div>
+
+    <div class="em_contact_form">
+      <form id="mortgage-calculator-form" autocomplete="on">
+        <div class="row">
+
+          <!-- INPUTS (Monthly user inputs) -->
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="form_field_inner">
+              <label>Mortgage Amount Balance ($)</label>
+              <input type="text" id="balance" inputmode="decimal" autocomplete="off" />
+              <span class="form-subtitle">Remaining principal balance (not including future interest).</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="form_field_inner">
+              <label>Monthly Mortgage Payment ($)</label>
+              <<input type="text" id="monthlyPayment" inputmode="decimal" autocomplete="off" />
+              <span class="form-subtitle">Monthly input → converted to annual internally.</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="form_field_inner">
+              <label>Monthly Salary ($)</label>
+              <input type="text" id="monthlySalary" inputmode="decimal" autocomplete="off" />
+              <span class="form-subtitle">Monthly input → converted to annual internally.</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="form_field_inner">
+              <label>Property Tax (Monthly $)</label>
+              <input type="text" id="monthlyTax" inputmode="decimal" autocomplete="off" />
+              <span class="form-subtitle">Monthly input → converted to annual internally.</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="form_field_inner">
+              <label>Property Insurance (Monthly $)</label>
+              <input type="text" id="monthlyInsurance" inputmode="decimal" autocomplete="off" />
+              <span class="form-subtitle">Monthly input → converted to annual internally.</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="form_field_inner">
+              <label>Years Remaining on Current Mortgage</label>
+              <input type="number" id="yearsRemaining" min="0" step="1" />
+              <span class="form-subtitle">
+                Used to estimate remaining mortgage cost: monthlyPayment × 12 × yearsRemaining.
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- VISUAL BLOCKS -->
+        <div class="mm-block mm-current">
+          <div class="mm-block__title">
+            <span class="mm-badge">⚠️</span>
+            <span>Current Housing Burden (Reference Only)</span>
+          </div>
+          <p class="mm-note">
+            This reflects your <strong>current monthly housing load</strong> (mortgage + tax + insurance) and how much of your income it consumes.
+            Housing above <strong>30%</strong> of income is generally considered financially unsustainable.
+          </p>
+
+          <div class="mm-inline">
+            <span class="mm-pill"><strong>Current Monthly Housing Load:</strong> <input type="text" id="currentRatioMonthly" readonly style="border:none;background:transparent;width:260px;max-width:100%;" /></span>
+          </div>
+        </div>
+
+        <div class="mm-block mm-partA">
+          <div class="mm-block__title">
+            <span class="mm-badge">✔</span>
+            <span>Part A — Active Stability Note (60%)</span>
+          </div>
+          <p class="mm-note">
+            The system tests stability windows (10 / 15 / 20 / 30 years) and selects the first window where
+            average annual housing load falls below <strong>30%</strong> of annual income.
+            <br><strong>This is not a loan term.</strong> It is a <strong>stability evaluation window</strong>.
+          </p>
+
+          <div class="row" style="margin-top:12px;">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form_field_inner">
+                <label>Stability Evaluation Window (Non-Loan)</label>
+                <input type="text" id="termA" readonly />
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form_field_inner">
+                <label>Eligibility Status (Part A)</label>
+                <input type="text" id="eligibilityA" readonly />
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form_field_inner">
+                <label>Average Monthly Stability Load (Active — Note A)</label>
+                <input type="text" id="costA_monthly" readonly />
+                <span class="form-subtitle">Shown as $ / month and % of monthly income.</span>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form_field_inner">
+                <label>Average Annual Stability Load (Active — Note A)</label>
+                <input type="text" id="costA_annual" readonly />
+                <span class="form-subtitle">Shown as $ / year and % of annual income.</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="mm-note">
+            The values above represent a <strong>structural reference</strong> for affordability evaluation.
+            They are designed to show whether your housing load can be stabilized below the affordability cap.
+          </p>
+        </div>
+
+        <div class="mm-block mm-partB">
+          <div class="mm-block__title">
+            <span class="mm-badge">🔒</span>
+            <span>Part B — Deferred Stability Note (40%)</span>
+          </div>
+          <p class="mm-note">
+            <strong>Important:</strong> Part B does <strong>not</strong> run until Part A is eligible.
+            Part B inherits the same stability window selected in Part A.
+            <br>
+            This component is a <strong>deferred</strong> structural element and is shown for transparency and institutional reference.
+          </p>
+
+          <div class="row" style="margin-top:12px;">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form_field_inner">
+                <label>Locked Window (Inherited from Part A)</label>
+                <input type="text" id="termB_locked" readonly />
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form_field_inner">
+                <label>Status (Part B)</label>
+                <input type="text" id="statusB" readonly />
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form_field_inner">
+                <label>Average Monthly Structural Reference (Deferred — Note B)</label>
+                <input type="text" id="costB_monthly" readonly />
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form_field_inner">
+                <label>Average Annual Structural Reference (Deferred — Note B)</label>
+                <input type="text" id="costB_annual" readonly />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPARISON SUMMARY -->
+        <div class="mm-summary">
+          <div class="mm-summary__title">
+            <span class="mm-badge" style="background:#111827;color:#fff;">≋</span>
+            <span>Housing Burden Comparison Summary</span>
+          </div>
+
+          <div class="mm-summary__grid">
+            <div class="mm-summary__card mm-summary__card--red">
+              <div class="mm-summary__label">Today (Current Housing Load)</div>
+              <p class="mm-summary__big" id="summary_now_amount">$0.00 / month</p>
+              <p class="mm-summary__small" id="summary_now_pct">0.00% of monthly income</p>
+            </div>
+
+            <div class="mm-summary__card mm-summary__card--green">
+              <div class="mm-summary__label">After Program Evaluation (Part A Active Load)</div>
+              <p class="mm-summary__big" id="summary_after_amount">—</p>
+              <p class="mm-summary__small" id="summary_after_pct">—</p>
+            </div>
+          </div>
+
+          <div class="mm-disclaimer">
+            This calculator is for <strong>informational and structural evaluation purposes only</strong>.
+            It does not generate loan offers, refinancing terms, payment schedules, or financial commitments.
+          </div>
+
+          <!-- RESET -->
+          <div class="mm-btnrow">
+            <button type="button" id="resetCalculator" class="mm-reset-btn">Reset Calculator</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
   <!-- FRAUD PREVENTION &amp; PROGRAM INTEGRITY -->
-  <div class="about_area ">
+  <div class="about_area black_background ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -656,7 +883,7 @@
     </div>
   </div>
   <!-- Express Support -->
-  <div class="about_area goal_area ">
+  <div class="about_area goal_area white_background">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -878,6 +1105,332 @@
       window.addEventListener('orientationchange', () => setTimeout(fill, 250), { passive: true });
     })();
   </script>
+  <!-- funcionamiento de mortage modification -->
+ <script>
+(function () {
+  const IDS = {
+    balance: "balance",
+    monthlyPayment: "monthlyPayment",
+    monthlySalary: "monthlySalary",
+    monthlyTax: "monthlyTax",
+    monthlyInsurance: "monthlyInsurance",
+    yearsRemaining: "yearsRemaining",
+
+    currentRatioMonthly: "currentRatioMonthly",
+
+    termA: "termA",
+    costA_monthly: "costA_monthly",
+    costA_annual: "costA_annual",
+    eligibilityA: "eligibilityA",
+
+    termB_locked: "termB_locked",
+    statusB: "statusB",
+    costB_monthly: "costB_monthly",
+    costB_annual: "costB_annual",
+
+    summary_now_amount: "summary_now_amount",
+    summary_now_pct: "summary_now_pct",
+    summary_after_amount: "summary_after_amount",
+    summary_after_pct: "summary_after_pct",
+
+    resetBtn: "resetCalculator"
+  };
+
+  const TERMS = [10, 15, 20, 30];
+  const THRESHOLD = 0.30;
+
+  const $ = (id) => document.getElementById(id);
+
+  const USD = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  });
+
+  const US_INT = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
+
+  function money(n) {
+    const v = Number.isFinite(n) ? n : 0;
+    return USD.format(v);
+  }
+
+  function pct(n) {
+    return `${(Number.isFinite(n) ? n : 0).toFixed(2)}%`;
+  }
+
+  function setVal(id, value) {
+    const el = $(id);
+    if (el) el.value = value;
+  }
+
+  function setText(id, value) {
+    const el = $(id);
+    if (el) el.textContent = value;
+  }
+
+  // Parse accepts commas and optional $
+  function parseNumFromValue(raw) {
+    const cleaned = String(raw || "")
+      .replace(/\$/g, "")
+      .replace(/,/g, "")
+      .trim();
+    const n = parseFloat(cleaned);
+    return Number.isFinite(n) ? n : 0;
+  }
+
+  function parseNum(id) {
+    const el = $(id);
+    return el ? parseNumFromValue(el.value) : 0;
+  }
+
+  // =========================
+  // Bank-style input formatting with stable caret
+  // =========================
+  function stripToDigitsAndDot(s, intOnly) {
+    s = String(s || "").replace(/[^\d.]/g, "");
+    if (intOnly) return s.replace(/\./g, "");
+
+    // keep only first dot
+    const parts = s.split(".");
+    if (parts.length <= 1) return s;
+    return parts[0] + "." + parts.slice(1).join("");
+  }
+
+  function formatUSNumberWhileTyping(raw, intOnly) {
+    raw = stripToDigitsAndDot(raw, intOnly);
+    if (!raw) return "";
+
+    const hasDot = raw.includes(".");
+    const endsWithDot = raw.endsWith(".");
+
+    if (intOnly) {
+      const n = parseInt(raw, 10);
+      return Number.isFinite(n) ? US_INT.format(n) : "";
+    }
+
+    const [whole, dec = ""] = raw.split(".");
+    const wholeNum = whole ? parseInt(whole, 10) : 0;
+    const formattedWhole = US_INT.format(Number.isFinite(wholeNum) ? wholeNum : 0);
+    const dec2 = dec.slice(0, 2);
+
+    if (hasDot || endsWithDot) {
+      return dec2 ? `${formattedWhole}.${dec2}` : `${formattedWhole}.`;
+    }
+    return formattedWhole;
+  }
+
+  // Count digits to the left of caret (stable anchor)
+ function tokensLeftOfCaret(str, caretPos) {
+  // Tokens = digits + dot (.)
+  let c = 0;
+  for (let i = 0; i < caretPos; i++) {
+    if (/[\d.]/.test(str[i])) c++;
+  }
+  return c;
+}
+
+  function setCaretAfterNTokens(el, tokenCount) {
+  const s = el.value;
+  let c = 0;
+  let pos = 0;
+
+  for (; pos < s.length; pos++) {
+    if (/[\d.]/.test(s[pos])) c++;
+    if (c >= tokenCount) { pos++; break; }
+  }
+  if (pos > s.length) pos = s.length;
+  el.setSelectionRange(pos, pos);
+}
+
+  function attachLiveMask(id, { intOnly = false } = {}) {
+    const el = $(id);
+    if (!el) return;
+
+    el.addEventListener("input", () => {
+      const before = el.value;
+      const caret = el.selectionStart ?? before.length;
+      const tokensLeft = tokensLeftOfCaret(before, caret);
+
+      const formatted = formatUSNumberWhileTyping(before, intOnly);
+
+      el.value = formatted;
+      setCaretAfterNTokens(el, tokensLeft);
+
+      calculateAll(); // realtime
+    });
+
+    // also recalc on paste
+    el.addEventListener("paste", () => setTimeout(calculateAll, 0));
+  }
+
+  function clearA() {
+    setVal(IDS.termA, "");
+    setVal(IDS.costA_monthly, "");
+    setVal(IDS.costA_annual, "");
+    setVal(IDS.eligibilityA, "");
+  }
+
+  function clearB() {
+    setVal(IDS.termB_locked, "");
+    setVal(IDS.statusB, "");
+    setVal(IDS.costB_monthly, "");
+    setVal(IDS.costB_annual, "");
+  }
+
+  function clearSummaryAfter() {
+    setText(IDS.summary_after_amount, "—");
+    setText(IDS.summary_after_pct, "—");
+  }
+
+  function computePart({ factor, balance, pay_m, tax_m, ins_m, sal_m, yearsRemaining }) {
+    const sal_a = sal_m * 12;
+    const tax_a = tax_m * 12;
+    const ins_a = ins_m * 12;
+
+    const remainingMortgageCost = pay_m * 12 * yearsRemaining; // key interpretation
+    const principalComponent = factor * balance;
+    const timeCostComponent = factor * remainingMortgageCost;
+
+    for (const term of TERMS) {
+      const totalOverTerm =
+        principalComponent +
+        timeCostComponent +
+        ((tax_a + ins_a) * term);
+
+      const annualAvg = totalOverTerm / term;
+      const monthlyAvg = annualAvg / 12;
+
+      const ratioAnnual = annualAvg / sal_a;
+      const ratioMonthlyDisplay = (monthlyAvg / sal_m) * 100;
+
+      if (ratioAnnual < THRESHOLD) {
+        return { eligible: true, term, annualAvg, monthlyAvg, ratioAnnual, ratioMonthlyDisplay };
+      }
+    }
+    return { eligible: false };
+  }
+
+  function calculateAll() {
+    const balance = parseNum(IDS.balance);
+    const pay_m = parseNum(IDS.monthlyPayment);
+    const sal_m = parseNum(IDS.monthlySalary);
+    const tax_m = parseNum(IDS.monthlyTax);
+    const ins_m = parseNum(IDS.monthlyInsurance);
+    const yearsRemaining = parseNum(IDS.yearsRemaining);
+
+    // Current snapshot
+    const housing_m = pay_m + tax_m + ins_m;
+
+    if (sal_m > 0) {
+      const ratio_m = housing_m > 0 ? (housing_m / sal_m) * 100 : 0;
+      setVal(IDS.currentRatioMonthly, `${money(housing_m)} | ${pct(ratio_m)} of monthly salary`);
+
+      setText(IDS.summary_now_amount, `${money(housing_m)} / month`);
+      setText(IDS.summary_now_pct, `${pct(ratio_m)} of monthly income`);
+    } else {
+      setVal(IDS.currentRatioMonthly, "");
+      setText(IDS.summary_now_amount, `${money(housing_m)} / month`);
+      setText(IDS.summary_now_pct, "—");
+    }
+
+    clearA(); clearB(); clearSummaryAfter();
+
+    if (!(balance > 0 && sal_m > 0 && yearsRemaining > 0)) {
+      setVal(IDS.eligibilityA, "Enter Balance, Monthly Salary, and Years Remaining to evaluate");
+      setVal(IDS.termB_locked, "Locked (Part A incomplete)");
+      setVal(IDS.statusB, "Not executed — Part A not completed");
+      return;
+    }
+
+    // Part A
+    const partA = computePart({
+      factor: 0.60, balance, pay_m, tax_m, ins_m, sal_m, yearsRemaining
+    });
+
+    const sal_a = sal_m * 12;
+
+    if (!partA.eligible) {
+      setVal(IDS.termA, "N/A");
+      setVal(IDS.costA_monthly, "Exceeds 30% threshold");
+      setVal(IDS.costA_annual, "Exceeds 30% threshold");
+      setVal(IDS.eligibilityA, "Not eligible — Annual avg housing load exceeds 30% of annual income");
+
+      setVal(IDS.termB_locked, "Locked (Part A not eligible)");
+      setVal(IDS.statusB, "Not executed — Part A not eligible");
+      return;
+    }
+
+    setVal(IDS.termA, `${partA.term} years`);
+    setVal(IDS.costA_monthly, `${money(partA.monthlyAvg)} | ${pct(partA.ratioMonthlyDisplay)} of monthly income`);
+    setVal(IDS.costA_annual, `${money(partA.annualAvg)} | ${pct((partA.annualAvg / sal_a) * 100)} of annual income`);
+    setVal(IDS.eligibilityA, "Eligible — Part A approved");
+
+    setText(IDS.summary_after_amount, `${money(partA.monthlyAvg)} / month`);
+    setText(IDS.summary_after_pct, `${pct(partA.ratioMonthlyDisplay)} of monthly income`);
+
+    // Part B inherits termA
+    const factorB = 0.40;
+    const tax_a = tax_m * 12;
+    const ins_a = ins_m * 12;
+    const remainingMortgageCost = pay_m * 12 * yearsRemaining;
+    const termB = partA.term;
+
+    const totalOverTermB =
+      (factorB * balance) +
+      (factorB * remainingMortgageCost) +
+      ((tax_a + ins_a) * termB);
+
+    const annualAvgB = totalOverTermB / termB;
+    const monthlyAvgB = annualAvgB / 12;
+    const ratioAnnualB = annualAvgB / (sal_m * 12);
+    const ratioMonthlyB = (monthlyAvgB / sal_m) * 100;
+
+    setVal(IDS.termB_locked, `${termB} years (inherited from Part A)`);
+    setVal(IDS.statusB, "Executed — Part B calculated using 40% substitution");
+    setVal(IDS.costB_monthly, `${money(monthlyAvgB)} | ${pct(ratioMonthlyB)} of monthly income`);
+    setVal(IDS.costB_annual, `${money(annualAvgB)} | ${pct(ratioAnnualB * 100)} of annual income`);
+  }
+
+  function resetAll() {
+    [IDS.balance, IDS.monthlyPayment, IDS.monthlySalary, IDS.monthlyTax, IDS.monthlyInsurance, IDS.yearsRemaining].forEach(id => {
+      const el = $(id);
+      if (el) el.value = "";
+    });
+
+    setVal(IDS.currentRatioMonthly, "");
+    clearA(); clearB();
+
+    setText(IDS.summary_now_amount, `${money(0)} / month`);
+    setText(IDS.summary_now_pct, "—");
+    clearSummaryAfter();
+  }
+
+  // Attach LIVE masks (these fields MUST be type="text")
+  attachLiveMask(IDS.balance, { intOnly: false });
+  attachLiveMask(IDS.monthlyPayment, { intOnly: false });
+  attachLiveMask(IDS.monthlySalary, { intOnly: false });
+  attachLiveMask(IDS.monthlyTax, { intOnly: false });
+  attachLiveMask(IDS.monthlyInsurance, { intOnly: false });
+
+  // Years can be type="number" or "text". If number, we don't insert commas anyway.
+  // Recommended: keep it number; still recalculates on input.
+  const yearsEl = $(IDS.yearsRemaining);
+  if (yearsEl) yearsEl.addEventListener("input", calculateAll, { passive: true });
+
+  // Reset
+  const resetBtn = $(IDS.resetBtn);
+  if (resetBtn) resetBtn.addEventListener("click", resetAll);
+
+  resetAll();
+})();
+</script>
+
+
+
+
+
+
 </body>
 
 </html>
