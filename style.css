@@ -8651,6 +8651,7 @@ select:-webkit-autofill:focus {
    	   CALCULATOR MORTAGE
    ========================= */
   /* --- Visual clarity layers (non-invasive) --- */
+   /* --- Visual clarity layers (non-invasive) --- */
   .mm-help {
     background: #f6f7f9;
     border: 1px solid #e6e8ee;
@@ -8725,12 +8726,6 @@ select:-webkit-autofill:focus {
   }
   .mm-pill strong { font-weight: 800; }
 
-  .mm-divider {
-    height: 1px;
-    background: #e6e8ee;
-    margin: 18px 0;
-  }
-
   /* Summary (full width) */
   .mm-summary {
     border: 1px solid #e6e8ee;
@@ -8789,8 +8784,13 @@ select:-webkit-autofill:focus {
     line-height: 1.45;
   }
 
-  /* Button (tries to match your theme; safe fallback) */
-  .mm-btnrow { margin-top: 18px; }
+  /* Reset button centered */
+  .mm-btnrow{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 18px;
+  }
   .mm-reset-btn {
     border: none;
     border-radius: 999px;
@@ -8804,13 +8804,6 @@ select:-webkit-autofill:focus {
 
   /* Make readonly look intentional */
   input[readonly] { background: #f8fafc; }
-
-  /* BOTON RESET CENTRADO */
-  .mm-btnrow{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
 /* =========================
 	FIN DE CALCULATOR MORTAGE
    =========================*/
