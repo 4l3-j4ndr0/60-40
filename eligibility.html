@@ -108,7 +108,11 @@
                   <a href="how_it_work.html">How It Works</a>
                 </li>
                 <li>
-                  <a href="to_veterans.html">TO VETERANS</a>
+                  <a href="those_who_serve.html">Petition</a>
+                  <ul class="sub-menu">
+                    <li><a href="those_who_serve.html">THOSE WHO SERVE</a></li>
+                    <li><a href="governor_letter.html">GOVERNOR LETTER</a></li>
+                  </ul>
                 </li>
                 <li>
                   <a href="eligibility.html">Eligibility</a>
@@ -159,7 +163,11 @@
             <a href="how_it_work.html">How It Works</a>
           </li>
           <li>
-            <a href="to_veterans.html">TO VETERANS</a>
+            <a href="those_who_serve.html">Petition</a>
+            <ul class="sub-menu">
+              <li><a href="those_who_serve.html">THOSE WHO SERVE</a></li>
+              <li><a href="governor_letter.html">GOVERNOR LETTER</a></li>
+            </ul>
           </li>
           <li>
             <a href="eligibility.html">Eligibility</a>
@@ -548,27 +556,27 @@
             <!-- Divider -->
             <div class="closing-divider"></div>
             <!-- Top block (nuevo) -->
-<div class="pr-top-grid pr-top-grid--program-review">
-  <!-- Título centrado arriba -->
-  <h3 class="pr-top-title">Program Review</h3>
+            <div class="pr-top-grid pr-top-grid--program-review">
+              <!-- Título centrado arriba -->
+              <h3 class="pr-top-title">Program Review</h3>
 
-  <!-- Izquierda: bullet #1 -->
-  <div class="pr-top-col pr-top-col-left">
-    <ul class="pr-bullets">
-      <li>Compliance/fraud team verifies legitimacy</li>
-    </ul>
-  </div>
+              <!-- Izquierda: bullet #1 -->
+              <div class="pr-top-col pr-top-col-left">
+                <ul class="pr-bullets">
+                  <li>Compliance/fraud team verifies legitimacy</li>
+                </ul>
+              </div>
 
-  <!-- Divider vertical (se mantiene) -->
-  <div class="pr-top-divider" aria-hidden="true"></div>
+              <!-- Divider vertical (se mantiene) -->
+              <div class="pr-top-divider" aria-hidden="true"></div>
 
-  <!-- Derecha: bullet #2 -->
-  <div class="pr-top-col pr-top-col-right">
-    <ul class="pr-bullets">
-      <li>Provides guidance to reduce probate complications</li>
-    </ul>
-  </div>
-</div>
+              <!-- Derecha: bullet #2 -->
+              <div class="pr-top-col pr-top-col-right">
+                <ul class="pr-bullets">
+                  <li>Provides guidance to reduce probate complications</li>
+                </ul>
+              </div>
+            </div>
 
             <!-- Bottom highlighted rule box -->
             <div class="pr-bottom-highlight">
@@ -601,220 +609,225 @@
     </div>
   </div>
   <!-- MORTAGE MODIFICATION (CALCULADORA) -->
-	<div class="contact_area white_background" id="contact">
-  <div class="container">
+  <div class="contact_area white_background" id="contact">
+    <div class="container">
 
-    <!-- SECTION TITLE -->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section-title t_center">
-          <h2>Mortgage Modification</h2>
-          <div class="em-image1">
-            <img src="assets/images/icon.png" alt="title image" />
+      <!-- SECTION TITLE -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title t_center">
+            <h2>Mortgage Modification</h2>
+            <div class="em-image1">
+              <img src="assets/images/icon.png" alt="title image" />
+            </div>
+            <p class="text-alignm1">Affordability Stability Evaluation (Non-Loan)</p>
           </div>
-          <p class="text-alignm1">Affordability Stability Evaluation (Non-Loan)</p>
-        </div>
 
-        <!-- PRE-CALCULATOR EXPLANATION -->
-        <div class="mm-help">
-          <strong>Important:</strong> This tool does <strong>not</strong> calculate loan payments or refinancing terms.
-          It evaluates <strong>housing affordability stability</strong> under a <strong>non-lending</strong> institutional framework.
-          Monthly inputs are used for readability, and the program selection is based on a <strong>50% monthly income cap</strong>.
-          <br>
-          <strong>Property Tax and Property Insurance</strong> should be entered as they are commonly billed in Florida:
-          <strong>annual amounts</strong> (applied for <strong>Year 1 only</strong>).
+          <!-- PRE-CALCULATOR EXPLANATION -->
+          <div class="mm-help">
+            <strong>Important:</strong> This tool does <strong>not</strong> calculate loan payments or refinancing
+            terms.
+            It evaluates <strong>housing affordability stability</strong> under a <strong>non-lending</strong>
+            institutional framework.
+            Monthly inputs are used for readability, and the program selection is based on a <strong>50% monthly income
+              cap</strong>.
+            <br>
+            <strong>Property Tax and Property Insurance</strong> should be entered as they are commonly billed in
+            Florida:
+            <strong>annual amounts</strong> (applied for <strong>Year 1 only</strong>).
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="em_contact_form">
-      <form id="mortgage-calculator-form" autocomplete="on">
-        <div class="row">
+      <div class="em_contact_form">
+        <form id="mortgage-calculator-form" autocomplete="on">
+          <div class="row">
 
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="form_field_inner">
-              <label>Mortgage Amount Balance ($)</label>
-              <input type="text" id="balance" inputmode="decimal" autocomplete="off" />
-              <span class="form-subtitle">Remaining principal balance (not including future interest).</span>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="form_field_inner">
-              <label>Monthly Mortgage Payment ($)</label>
-              <input type="text" id="monthlyPayment" inputmode="decimal" autocomplete="off" />
-              <span class="form-subtitle">Used only to compute the “Today” housing load.</span>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="form_field_inner">
-              <label>Monthly Salary ($)</label>
-              <input type="text" id="monthlySalary" inputmode="decimal" autocomplete="off" />
-              <span class="form-subtitle">Used to evaluate the 50% affordability cap.</span>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="form_field_inner">
-              <label>Property Tax (Annual $ — Year 1 only)</label>
-              <input type="text" id="monthlyTax" inputmode="decimal" autocomplete="off" />
-              <span class="form-subtitle">Enter the annual amount (Florida-style). Applied for Year 1 only.</span>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="form_field_inner">
-              <label>Property Insurance (Annual $ — Year 1 only)</label>
-              <input type="text" id="monthlyInsurance" inputmode="decimal" autocomplete="off" />
-              <span class="form-subtitle">Enter the annual amount. Applied for Year 1 only.</span>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- VISUAL BLOCKS -->
-        <div class="mm-block mm-current">
-          <div class="mm-block__title">
-            <span class="mm-badge">⚠️</span>
-            <span>Current Housing Burden (Reference Only)</span>
-          </div>
-          <p class="mm-note">
-            This reflects your <strong>current monthly housing load</strong>:
-            mortgage payment + (annual property tax / 12) + (annual property insurance / 12).
-            Program selection uses a <strong>50%</strong> monthly income cap.
-          </p>
-
-          <div class="mm-inline">
-            <span class="mm-pill">
-              <strong>Current Monthly Housing Load:</strong>
-              <input type="text" id="currentRatioMonthly" readonly style="border:none;background:transparent;width:320px;max-width:100%;" />
-            </span>
-          </div>
-        </div>
-
-        <div class="mm-block mm-partA">
-          <div class="mm-block__title">
-            <span class="mm-badge">✔</span>
-            <span>Part A — Active Stability Note (60%)</span>
-          </div>
-          <p class="mm-note">
-            The system tests stability windows (10 / 15 / 20 / 30 years) and selects the first window where
-            the estimated program housing load is <strong>at or below 50%</strong> of monthly income.
-            <br><strong>This is not a loan term.</strong> It is a <strong>stability evaluation window</strong>.
-            Tax &amp; insurance are applied for <strong>Year 1 only</strong>.
-          </p>
-
-          <div class="row" style="margin-top:12px;">
             <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="form_field_inner">
-                <label>Stability Evaluation Window (Non-Loan)</label>
-                <input type="text" id="termA" readonly />
+                <label>Mortgage Amount Balance ($)</label>
+                <input type="text" id="balance" inputmode="decimal" autocomplete="off" />
+                <span class="form-subtitle">Remaining principal balance (not including future interest).</span>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="form_field_inner">
-                <label>Eligibility Status (Part A)</label>
-                <input type="text" id="eligibilityA" readonly />
+                <label>Monthly Mortgage Payment ($)</label>
+                <input type="text" id="monthlyPayment" inputmode="decimal" autocomplete="off" />
+                <span class="form-subtitle">Used only to compute the “Today” housing load.</span>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="form_field_inner">
-                <label>Estimated Monthly Program Housing Load (Year 1)</label>
-                <input type="text" id="costA_monthly" readonly />
-                <span class="form-subtitle">Shown as $ / month and % of monthly income.</span>
+                <label>Monthly Salary ($)</label>
+                <input type="text" id="monthlySalary" inputmode="decimal" autocomplete="off" />
+                <span class="form-subtitle">Used to evaluate the 50% affordability cap.</span>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="form_field_inner">
-                <label>Estimated Annual Program Housing Load (Year 1)</label>
-                <input type="text" id="costA_annual" readonly />
-                <span class="form-subtitle">Shown as $ / year and % (same % basis for consistency).</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mm-block mm-partB">
-          <div class="mm-block__title">
-            <span class="mm-badge">🔒</span>
-            <span>Part B — Deferred Stability Note (40%)</span>
-          </div>
-          <p class="mm-note">
-            Part B inherits the same stability window selected in Part A.
-            Tax &amp; insurance are applied for <strong>Year 1 only</strong>.
-          </p>
-
-          <div class="row" style="margin-top:12px;">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="form_field_inner">
-                <label>Locked Window (Inherited from Part A)</label>
-                <input type="text" id="termB_locked" readonly />
+                <label>Property Tax (Annual $ — Year 1 only)</label>
+                <input type="text" id="monthlyTax" inputmode="decimal" autocomplete="off" />
+                <span class="form-subtitle">Enter the annual amount (Florida-style). Applied for Year 1 only.</span>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="form_field_inner">
-                <label>Status (Part B)</label>
-                <input type="text" id="statusB" readonly />
+                <label>Property Insurance (Annual $ — Year 1 only)</label>
+                <input type="text" id="monthlyInsurance" inputmode="decimal" autocomplete="off" />
+                <span class="form-subtitle">Enter the annual amount. Applied for Year 1 only.</span>
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="form_field_inner">
-                <label>Estimated Monthly Program Housing Load (Year 1)</label>
-                <input type="text" id="costB_monthly" readonly />
+          </div>
+
+          <!-- VISUAL BLOCKS -->
+          <div class="mm-block mm-current">
+            <div class="mm-block__title">
+              <span class="mm-badge">⚠️</span>
+              <span>Current Housing Burden (Reference Only)</span>
+            </div>
+            <p class="mm-note">
+              This reflects your <strong>current monthly housing load</strong>:
+              mortgage payment + (annual property tax / 12) + (annual property insurance / 12).
+              Program selection uses a <strong>50%</strong> monthly income cap.
+            </p>
+
+            <div class="mm-inline">
+              <span class="mm-pill">
+                <strong>Current Monthly Housing Load:</strong>
+                <input type="text" id="currentRatioMonthly" readonly
+                  style="border:none;background:transparent;width:320px;max-width:100%;" />
+              </span>
+            </div>
+          </div>
+
+          <div class="mm-block mm-partA">
+            <div class="mm-block__title">
+              <span class="mm-badge">✔</span>
+              <span>Part A — Active Stability Note (60%)</span>
+            </div>
+            <p class="mm-note">
+              The system tests stability windows (10 / 15 / 20 / 30 years) and selects the first window where
+              the estimated program housing load is <strong>at or below 50%</strong> of monthly income.
+              <br><strong>This is not a loan term.</strong> It is a <strong>stability evaluation window</strong>.
+              Tax &amp; insurance are applied for <strong>Year 1 only</strong>.
+            </p>
+
+            <div class="row" style="margin-top:12px;">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form_field_inner">
+                  <label>Stability Evaluation Window (Non-Loan)</label>
+                  <input type="text" id="termA" readonly />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form_field_inner">
+                  <label>Eligibility Status (Part A)</label>
+                  <input type="text" id="eligibilityA" readonly />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form_field_inner">
+                  <label>Estimated Monthly Program Housing Load (Year 1)</label>
+                  <input type="text" id="costA_monthly" readonly />
+                  <span class="form-subtitle">Shown as $ / month and % of monthly income.</span>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form_field_inner">
+                  <label>Estimated Annual Program Housing Load (Year 1)</label>
+                  <input type="text" id="costA_annual" readonly />
+                  <span class="form-subtitle">Shown as $ / year and % (same % basis for consistency).</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mm-block mm-partB">
+            <div class="mm-block__title">
+              <span class="mm-badge">🔒</span>
+              <span>Part B — Deferred Stability Note (40%)</span>
+            </div>
+            <p class="mm-note">
+              Part B inherits the same stability window selected in Part A.
+              Tax &amp; insurance are applied for <strong>Year 1 only</strong>.
+            </p>
+
+            <div class="row" style="margin-top:12px;">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form_field_inner">
+                  <label>Locked Window (Inherited from Part A)</label>
+                  <input type="text" id="termB_locked" readonly />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form_field_inner">
+                  <label>Status (Part B)</label>
+                  <input type="text" id="statusB" readonly />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form_field_inner">
+                  <label>Estimated Monthly Program Housing Load (Year 1)</label>
+                  <input type="text" id="costB_monthly" readonly />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form_field_inner">
+                  <label>Estimated Annual Program Housing Load (Year 1)</label>
+                  <input type="text" id="costB_annual" readonly />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- COMPARISON SUMMARY -->
+          <div class="mm-summary">
+            <div class="mm-summary__title">
+              <span class="mm-badge" style="background:#111827;color:#fff;">≋</span>
+              <span>Housing Burden Comparison Summary</span>
+            </div>
+
+            <div class="mm-summary__grid">
+              <div class="mm-summary__card mm-summary__card--red">
+                <div class="mm-summary__label">Today (Current Housing Load)</div>
+                <p class="mm-summary__big" id="summary_now_amount">$0.00 / month</p>
+                <p class="mm-summary__small" id="summary_now_pct">0.00% of monthly income</p>
+              </div>
+
+              <div class="mm-summary__card mm-summary__card--green">
+                <div class="mm-summary__label">After Program Evaluation (Part A Active Load)</div>
+                <p class="mm-summary__big" id="summary_after_amount">—</p>
+                <p class="mm-summary__small" id="summary_after_pct">—</p>
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="form_field_inner">
-                <label>Estimated Annual Program Housing Load (Year 1)</label>
-                <input type="text" id="costB_annual" readonly />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- COMPARISON SUMMARY -->
-        <div class="mm-summary">
-          <div class="mm-summary__title">
-            <span class="mm-badge" style="background:#111827;color:#fff;">≋</span>
-            <span>Housing Burden Comparison Summary</span>
-          </div>
-
-          <div class="mm-summary__grid">
-            <div class="mm-summary__card mm-summary__card--red">
-              <div class="mm-summary__label">Today (Current Housing Load)</div>
-              <p class="mm-summary__big" id="summary_now_amount">$0.00 / month</p>
-              <p class="mm-summary__small" id="summary_now_pct">0.00% of monthly income</p>
+            <div class="mm-disclaimer">
+              This calculator is for <strong>informational and structural evaluation purposes only</strong>.
+              It does not generate loan offers, refinancing terms, payment schedules, or financial commitments.
             </div>
 
-            <div class="mm-summary__card mm-summary__card--green">
-              <div class="mm-summary__label">After Program Evaluation (Part A Active Load)</div>
-              <p class="mm-summary__big" id="summary_after_amount">—</p>
-              <p class="mm-summary__small" id="summary_after_pct">—</p>
+            <!-- RESET -->
+            <div class="mm-btnrow">
+              <button type="button" id="resetCalculator" class="mm-reset-btn">Reset Calculator</button>
             </div>
           </div>
 
-          <div class="mm-disclaimer">
-            This calculator is for <strong>informational and structural evaluation purposes only</strong>.
-            It does not generate loan offers, refinancing terms, payment schedules, or financial commitments.
-          </div>
-
-          <!-- RESET -->
-          <div class="mm-btnrow">
-            <button type="button" id="resetCalculator" class="mm-reset-btn">Reset Calculator</button>
-          </div>
-        </div>
-
-      </form>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 
 
 
@@ -1097,329 +1110,329 @@
     })();
   </script>
   <!-- funcionamiento de mortage modification -->
- <script>
-(function () {
-  const IDS = {
-    balance: "balance",
-    monthlyPayment: "monthlyPayment",
-    monthlySalary: "monthlySalary",
-    monthlyTax: "monthlyTax",             // NOW: Annual tax (Year 1 only)
-    monthlyInsurance: "monthlyInsurance", // NOW: Annual insurance (Year 1 only)
+  <script>
+    (function () {
+      const IDS = {
+        balance: "balance",
+        monthlyPayment: "monthlyPayment",
+        monthlySalary: "monthlySalary",
+        monthlyTax: "monthlyTax",             // NOW: Annual tax (Year 1 only)
+        monthlyInsurance: "monthlyInsurance", // NOW: Annual insurance (Year 1 only)
 
-    currentRatioMonthly: "currentRatioMonthly",
+        currentRatioMonthly: "currentRatioMonthly",
 
-    termA: "termA",
-    costA_monthly: "costA_monthly",
-    costA_annual: "costA_annual",
-    eligibilityA: "eligibilityA",
+        termA: "termA",
+        costA_monthly: "costA_monthly",
+        costA_annual: "costA_annual",
+        eligibilityA: "eligibilityA",
 
-    termB_locked: "termB_locked",
-    statusB: "statusB",
-    costB_monthly: "costB_monthly",
-    costB_annual: "costB_annual",
+        termB_locked: "termB_locked",
+        statusB: "statusB",
+        costB_monthly: "costB_monthly",
+        costB_annual: "costB_annual",
 
-    summary_now_amount: "summary_now_amount",
-    summary_now_pct: "summary_now_pct",
-    summary_after_amount: "summary_after_amount",
-    summary_after_pct: "summary_after_pct",
+        summary_now_amount: "summary_now_amount",
+        summary_now_pct: "summary_now_pct",
+        summary_after_amount: "summary_after_amount",
+        summary_after_pct: "summary_after_pct",
 
-    resetBtn: "resetCalculator"
-  };
+        resetBtn: "resetCalculator"
+      };
 
-  const TERMS = [10, 15, 20, 30];
+      const TERMS = [10, 15, 20, 30];
 
-  // ✅ NEW threshold: 50% of monthly salary
-  const THRESHOLD = 0.50;
+      // ✅ NEW threshold: 50% of monthly salary
+      const THRESHOLD = 0.50;
 
-  const $ = (id) => document.getElementById(id);
+      const $ = (id) => document.getElementById(id);
 
-  const USD = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2
-  });
+      const USD = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
 
-  const US_INT = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
+      const US_INT = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
 
-  function money(n) {
-    const v = Number.isFinite(n) ? n : 0;
-    return USD.format(v);
-  }
-
-  function pct(n) {
-    return `${(Number.isFinite(n) ? n : 0).toFixed(2)}%`;
-  }
-
-  function setVal(id, value) {
-    const el = $(id);
-    if (el) el.value = value;
-  }
-
-  function setText(id, value) {
-    const el = $(id);
-    if (el) el.textContent = value;
-  }
-
-  function parseNumFromValue(raw) {
-    const cleaned = String(raw || "")
-      .replace(/\$/g, "")
-      .replace(/,/g, "")
-      .trim();
-    const n = parseFloat(cleaned);
-    return Number.isFinite(n) ? n : 0;
-  }
-
-  function parseNum(id) {
-    const el = $(id);
-    return el ? parseNumFromValue(el.value) : 0;
-  }
-
-  // =========================
-  // Bank-style input formatting with stable caret (UNCHANGED)
-  // =========================
-  function stripToDigitsAndDot(s, intOnly) {
-    s = String(s || "").replace(/[^\d.]/g, "");
-    if (intOnly) return s.replace(/\./g, "");
-
-    const parts = s.split(".");
-    if (parts.length <= 1) return s;
-    return parts[0] + "." + parts.slice(1).join("");
-  }
-
-  function formatUSNumberWhileTyping(raw, intOnly) {
-    raw = stripToDigitsAndDot(raw, intOnly);
-    if (!raw) return "";
-
-    const hasDot = raw.includes(".");
-    const endsWithDot = raw.endsWith(".");
-
-    if (intOnly) {
-      const n = parseInt(raw, 10);
-      return Number.isFinite(n) ? US_INT.format(n) : "";
-    }
-
-    const [whole, dec = ""] = raw.split(".");
-    const wholeNum = whole ? parseInt(whole, 10) : 0;
-    const formattedWhole = US_INT.format(Number.isFinite(wholeNum) ? wholeNum : 0);
-    const dec2 = dec.slice(0, 2);
-
-    if (hasDot || endsWithDot) {
-      return dec2 ? `${formattedWhole}.${dec2}` : `${formattedWhole}.`;
-    }
-    return formattedWhole;
-  }
-
-  function tokensLeftOfCaret(str, caretPos) {
-    let c = 0;
-    for (let i = 0; i < caretPos; i++) {
-      if (/[\d.]/.test(str[i])) c++;
-    }
-    return c;
-  }
-
-  function setCaretAfterNTokens(el, tokenCount) {
-    const s = el.value;
-    let c = 0;
-    let pos = 0;
-
-    for (; pos < s.length; pos++) {
-      if (/[\d.]/.test(s[pos])) c++;
-      if (c >= tokenCount) { pos++; break; }
-    }
-    if (pos > s.length) pos = s.length;
-    el.setSelectionRange(pos, pos);
-  }
-
-  function attachLiveMask(id, { intOnly = false } = {}) {
-    const el = $(id);
-    if (!el) return;
-
-    el.addEventListener("input", () => {
-      const before = el.value;
-      const caret = el.selectionStart ?? before.length;
-      const tokensLeft = tokensLeftOfCaret(before, caret);
-
-      const formatted = formatUSNumberWhileTyping(before, intOnly);
-
-      el.value = formatted;
-      setCaretAfterNTokens(el, tokensLeft);
-
-      calculateAll(); // realtime
-    });
-
-    el.addEventListener("paste", () => setTimeout(calculateAll, 0));
-  }
-
-  function clearA() {
-    setVal(IDS.termA, "");
-    setVal(IDS.costA_monthly, "");
-    setVal(IDS.costA_annual, "");
-    setVal(IDS.eligibilityA, "");
-  }
-
-  function clearB() {
-    setVal(IDS.termB_locked, "");
-    setVal(IDS.statusB, "");
-    setVal(IDS.costB_monthly, "");
-    setVal(IDS.costB_annual, "");
-  }
-
-  function clearSummaryAfter() {
-    setText(IDS.summary_after_amount, "—");
-    setText(IDS.summary_after_pct, "—");
-  }
-
-  // =========================================================
-  // ✅ NEW FORMULA (Year-1 Tax/Insurance only; Annual inputs)
-  //
-  // Tax and Insurance are entered as ANNUAL amounts:
-  //   taxMonthlyYear1 = annualTax / 12
-  //   insMonthlyYear1 = annualInsurance / 12
-  //
-  // Program Monthly (Part A/B) =
-  //   (factor * Mortgage Amount Balance) / (termYears * 12)
-  //   + taxMonthlyYear1 + insMonthlyYear1
-  //
-  // Term selection:
-  //   try 10 -> if > 50% salary, try 15 -> 20 -> 30
-  // =========================================================
-  function computePart({ factor, balance, annualTax, annualInsurance, monthlySalary }) {
-    const taxMonthlyYear1 = (annualTax || 0) / 12;
-    const insMonthlyYear1 = (annualInsurance || 0) / 12;
-
-    for (const termYears of TERMS) {
-      const monthlyPrincipal = (factor * balance) / (termYears * 12);
-      const monthlyTotal = monthlyPrincipal + taxMonthlyYear1 + insMonthlyYear1;
-
-      const ratioMonthly = monthlySalary > 0 ? (monthlyTotal / monthlySalary) : 0;
-      const ratioMonthlyPct = ratioMonthly * 100;
-
-      // if exceeds 50%, try next term
-      if (ratioMonthly <= THRESHOLD) {
-        // Annual (Year 1): just monthlyTotal * 12 (still Year-1 tax/ins only)
-        const annualTotalYear1 = monthlyTotal * 12;
-
-        return {
-          eligible: true,
-          term: termYears,
-          monthlyAvg: monthlyTotal,
-          annualAvg: annualTotalYear1,
-          ratioMonthlyDisplay: ratioMonthlyPct
-        };
+      function money(n) {
+        const v = Number.isFinite(n) ? n : 0;
+        return USD.format(v);
       }
-    }
 
-    return { eligible: false };
-  }
+      function pct(n) {
+        return `${(Number.isFinite(n) ? n : 0).toFixed(2)}%`;
+      }
 
-  function calculateAll() {
-    const balance = parseNum(IDS.balance);
-    const pay_m = parseNum(IDS.monthlyPayment);
-    const sal_m = parseNum(IDS.monthlySalary);
+      function setVal(id, value) {
+        const el = $(id);
+        if (el) el.value = value;
+      }
 
-    // These are ANNUAL now (Florida style), Year 1 only
-    const annualTax = parseNum(IDS.monthlyTax);
-    const annualInsurance = parseNum(IDS.monthlyInsurance);
+      function setText(id, value) {
+        const el = $(id);
+        if (el) el.textContent = value;
+      }
 
-    const taxMonthlyYear1 = annualTax / 12;
-    const insMonthlyYear1 = annualInsurance / 12;
+      function parseNumFromValue(raw) {
+        const cleaned = String(raw || "")
+          .replace(/\$/g, "")
+          .replace(/,/g, "")
+          .trim();
+        const n = parseFloat(cleaned);
+        return Number.isFinite(n) ? n : 0;
+      }
 
-    // Current snapshot (Today) uses Year-1 tax/insurance only
-    const housing_m = pay_m + taxMonthlyYear1 + insMonthlyYear1;
+      function parseNum(id) {
+        const el = $(id);
+        return el ? parseNumFromValue(el.value) : 0;
+      }
 
-    if (sal_m > 0) {
-      const ratio_m = housing_m > 0 ? (housing_m / sal_m) * 100 : 0;
-      setVal(IDS.currentRatioMonthly, `${money(housing_m)} | ${pct(ratio_m)} of monthly salary`);
+      // =========================
+      // Bank-style input formatting with stable caret (UNCHANGED)
+      // =========================
+      function stripToDigitsAndDot(s, intOnly) {
+        s = String(s || "").replace(/[^\d.]/g, "");
+        if (intOnly) return s.replace(/\./g, "");
 
-      setText(IDS.summary_now_amount, `${money(housing_m)} / month`);
-      setText(IDS.summary_now_pct, `${pct(ratio_m)} of monthly income`);
-    } else {
-      setVal(IDS.currentRatioMonthly, "");
-      setText(IDS.summary_now_amount, `${money(housing_m)} / month`);
-      setText(IDS.summary_now_pct, "—");
-    }
+        const parts = s.split(".");
+        if (parts.length <= 1) return s;
+        return parts[0] + "." + parts.slice(1).join("");
+      }
 
-    clearA(); clearB(); clearSummaryAfter();
+      function formatUSNumberWhileTyping(raw, intOnly) {
+        raw = stripToDigitsAndDot(raw, intOnly);
+        if (!raw) return "";
 
-    // Guardrails
-    if (!(balance > 0 && sal_m > 0)) {
-      setVal(IDS.eligibilityA, "Enter Mortgage Amount Balance and Monthly Salary to evaluate");
-      setVal(IDS.termB_locked, "Locked (Part A incomplete)");
-      setVal(IDS.statusB, "Not executed — Part A not completed");
-      return;
-    }
+        const hasDot = raw.includes(".");
+        const endsWithDot = raw.endsWith(".");
 
-    // Part A (60%)
-    const partA = computePart({
-      factor: 0.60,
-      balance,
-      annualTax,
-      annualInsurance,
-      monthlySalary: sal_m
-    });
+        if (intOnly) {
+          const n = parseInt(raw, 10);
+          return Number.isFinite(n) ? US_INT.format(n) : "";
+        }
 
-    if (!partA.eligible) {
-      setVal(IDS.termA, "N/A");
-      setVal(IDS.costA_monthly, "Exceeds 50% threshold");
-      setVal(IDS.costA_annual, "Exceeds 50% threshold");
-      setVal(IDS.eligibilityA, "Not eligible — Program load exceeds 50% of monthly income");
+        const [whole, dec = ""] = raw.split(".");
+        const wholeNum = whole ? parseInt(whole, 10) : 0;
+        const formattedWhole = US_INT.format(Number.isFinite(wholeNum) ? wholeNum : 0);
+        const dec2 = dec.slice(0, 2);
 
-      setVal(IDS.termB_locked, "Locked (Part A not eligible)");
-      setVal(IDS.statusB, "Not executed — Part A not eligible");
-      return;
-    }
+        if (hasDot || endsWithDot) {
+          return dec2 ? `${formattedWhole}.${dec2}` : `${formattedWhole}.`;
+        }
+        return formattedWhole;
+      }
 
-    setVal(IDS.termA, `${partA.term} years`);
-    setVal(IDS.costA_monthly, `${money(partA.monthlyAvg)} | ${pct(partA.ratioMonthlyDisplay)} of monthly income`);
-    setVal(IDS.costA_annual, `${money(partA.annualAvg)} | ${pct(partA.ratioMonthlyDisplay)} of annual income`);
-    setVal(IDS.eligibilityA, "Eligible — Part A approved");
+      function tokensLeftOfCaret(str, caretPos) {
+        let c = 0;
+        for (let i = 0; i < caretPos; i++) {
+          if (/[\d.]/.test(str[i])) c++;
+        }
+        return c;
+      }
 
-    setText(IDS.summary_after_amount, `${money(partA.monthlyAvg)} / month`);
-    setText(IDS.summary_after_pct, `${pct(partA.ratioMonthlyDisplay)} of monthly income`);
+      function setCaretAfterNTokens(el, tokenCount) {
+        const s = el.value;
+        let c = 0;
+        let pos = 0;
 
-    // Part B (40%) inherits termA (same year-1 tax/ins)
-    const termB = partA.term;
+        for (; pos < s.length; pos++) {
+          if (/[\d.]/.test(s[pos])) c++;
+          if (c >= tokenCount) { pos++; break; }
+        }
+        if (pos > s.length) pos = s.length;
+        el.setSelectionRange(pos, pos);
+      }
 
-    const monthlyPrincipalB = (0.40 * balance) / (termB * 12);
-    const monthlyTotalB = monthlyPrincipalB + taxMonthlyYear1 + insMonthlyYear1;
-    const annualTotalB = monthlyTotalB * 12;
-    const ratioMonthlyB = sal_m > 0 ? (monthlyTotalB / sal_m) * 100 : 0;
+      function attachLiveMask(id, { intOnly = false } = {}) {
+        const el = $(id);
+        if (!el) return;
 
-    setVal(IDS.termB_locked, `${termB} years (inherited from Part A)`);
-    setVal(IDS.statusB, "Executed — Part B calculated using 40% substitution");
-    setVal(IDS.costB_monthly, `${money(monthlyTotalB)} | ${pct(ratioMonthlyB)} of monthly income`);
-    setVal(IDS.costB_annual, `${money(annualTotalB)} | ${pct(ratioMonthlyB)} of annual income`);
-  }
+        el.addEventListener("input", () => {
+          const before = el.value;
+          const caret = el.selectionStart ?? before.length;
+          const tokensLeft = tokensLeftOfCaret(before, caret);
 
-  function resetAll() {
-    [IDS.balance, IDS.monthlyPayment, IDS.monthlySalary, IDS.monthlyTax, IDS.monthlyInsurance].forEach(id => {
-      const el = $(id);
-      if (el) el.value = "";
-    });
+          const formatted = formatUSNumberWhileTyping(before, intOnly);
 
-    setVal(IDS.currentRatioMonthly, "");
-    clearA(); clearB();
+          el.value = formatted;
+          setCaretAfterNTokens(el, tokensLeft);
 
-    setText(IDS.summary_now_amount, `${money(0)} / month`);
-    setText(IDS.summary_now_pct, "—");
-    clearSummaryAfter();
-  }
+          calculateAll(); // realtime
+        });
 
-  // Attach LIVE masks (bank-style) - SAME as before
-  attachLiveMask(IDS.balance, { intOnly: false });
-  attachLiveMask(IDS.monthlyPayment, { intOnly: false });
-  attachLiveMask(IDS.monthlySalary, { intOnly: false });
-  attachLiveMask(IDS.monthlyTax, { intOnly: false });
-  attachLiveMask(IDS.monthlyInsurance, { intOnly: false });
+        el.addEventListener("paste", () => setTimeout(calculateAll, 0));
+      }
 
-  // Reset
-  const resetBtn = $(IDS.resetBtn);
-  if (resetBtn) resetBtn.addEventListener("click", resetAll);
+      function clearA() {
+        setVal(IDS.termA, "");
+        setVal(IDS.costA_monthly, "");
+        setVal(IDS.costA_annual, "");
+        setVal(IDS.eligibilityA, "");
+      }
 
-  resetAll();
-})();
-</script>
+      function clearB() {
+        setVal(IDS.termB_locked, "");
+        setVal(IDS.statusB, "");
+        setVal(IDS.costB_monthly, "");
+        setVal(IDS.costB_annual, "");
+      }
+
+      function clearSummaryAfter() {
+        setText(IDS.summary_after_amount, "—");
+        setText(IDS.summary_after_pct, "—");
+      }
+
+      // =========================================================
+      // ✅ NEW FORMULA (Year-1 Tax/Insurance only; Annual inputs)
+      //
+      // Tax and Insurance are entered as ANNUAL amounts:
+      //   taxMonthlyYear1 = annualTax / 12
+      //   insMonthlyYear1 = annualInsurance / 12
+      //
+      // Program Monthly (Part A/B) =
+      //   (factor * Mortgage Amount Balance) / (termYears * 12)
+      //   + taxMonthlyYear1 + insMonthlyYear1
+      //
+      // Term selection:
+      //   try 10 -> if > 50% salary, try 15 -> 20 -> 30
+      // =========================================================
+      function computePart({ factor, balance, annualTax, annualInsurance, monthlySalary }) {
+        const taxMonthlyYear1 = (annualTax || 0) / 12;
+        const insMonthlyYear1 = (annualInsurance || 0) / 12;
+
+        for (const termYears of TERMS) {
+          const monthlyPrincipal = (factor * balance) / (termYears * 12);
+          const monthlyTotal = monthlyPrincipal + taxMonthlyYear1 + insMonthlyYear1;
+
+          const ratioMonthly = monthlySalary > 0 ? (monthlyTotal / monthlySalary) : 0;
+          const ratioMonthlyPct = ratioMonthly * 100;
+
+          // if exceeds 50%, try next term
+          if (ratioMonthly <= THRESHOLD) {
+            // Annual (Year 1): just monthlyTotal * 12 (still Year-1 tax/ins only)
+            const annualTotalYear1 = monthlyTotal * 12;
+
+            return {
+              eligible: true,
+              term: termYears,
+              monthlyAvg: monthlyTotal,
+              annualAvg: annualTotalYear1,
+              ratioMonthlyDisplay: ratioMonthlyPct
+            };
+          }
+        }
+
+        return { eligible: false };
+      }
+
+      function calculateAll() {
+        const balance = parseNum(IDS.balance);
+        const pay_m = parseNum(IDS.monthlyPayment);
+        const sal_m = parseNum(IDS.monthlySalary);
+
+        // These are ANNUAL now (Florida style), Year 1 only
+        const annualTax = parseNum(IDS.monthlyTax);
+        const annualInsurance = parseNum(IDS.monthlyInsurance);
+
+        const taxMonthlyYear1 = annualTax / 12;
+        const insMonthlyYear1 = annualInsurance / 12;
+
+        // Current snapshot (Today) uses Year-1 tax/insurance only
+        const housing_m = pay_m + taxMonthlyYear1 + insMonthlyYear1;
+
+        if (sal_m > 0) {
+          const ratio_m = housing_m > 0 ? (housing_m / sal_m) * 100 : 0;
+          setVal(IDS.currentRatioMonthly, `${money(housing_m)} | ${pct(ratio_m)} of monthly salary`);
+
+          setText(IDS.summary_now_amount, `${money(housing_m)} / month`);
+          setText(IDS.summary_now_pct, `${pct(ratio_m)} of monthly income`);
+        } else {
+          setVal(IDS.currentRatioMonthly, "");
+          setText(IDS.summary_now_amount, `${money(housing_m)} / month`);
+          setText(IDS.summary_now_pct, "—");
+        }
+
+        clearA(); clearB(); clearSummaryAfter();
+
+        // Guardrails
+        if (!(balance > 0 && sal_m > 0)) {
+          setVal(IDS.eligibilityA, "Enter Mortgage Amount Balance and Monthly Salary to evaluate");
+          setVal(IDS.termB_locked, "Locked (Part A incomplete)");
+          setVal(IDS.statusB, "Not executed — Part A not completed");
+          return;
+        }
+
+        // Part A (60%)
+        const partA = computePart({
+          factor: 0.60,
+          balance,
+          annualTax,
+          annualInsurance,
+          monthlySalary: sal_m
+        });
+
+        if (!partA.eligible) {
+          setVal(IDS.termA, "N/A");
+          setVal(IDS.costA_monthly, "Exceeds 50% threshold");
+          setVal(IDS.costA_annual, "Exceeds 50% threshold");
+          setVal(IDS.eligibilityA, "Not eligible — Program load exceeds 50% of monthly income");
+
+          setVal(IDS.termB_locked, "Locked (Part A not eligible)");
+          setVal(IDS.statusB, "Not executed — Part A not eligible");
+          return;
+        }
+
+        setVal(IDS.termA, `${partA.term} years`);
+        setVal(IDS.costA_monthly, `${money(partA.monthlyAvg)} | ${pct(partA.ratioMonthlyDisplay)} of monthly income`);
+        setVal(IDS.costA_annual, `${money(partA.annualAvg)} | ${pct(partA.ratioMonthlyDisplay)} of annual income`);
+        setVal(IDS.eligibilityA, "Eligible — Part A approved");
+
+        setText(IDS.summary_after_amount, `${money(partA.monthlyAvg)} / month`);
+        setText(IDS.summary_after_pct, `${pct(partA.ratioMonthlyDisplay)} of monthly income`);
+
+        // Part B (40%) inherits termA (same year-1 tax/ins)
+        const termB = partA.term;
+
+        const monthlyPrincipalB = (0.40 * balance) / (termB * 12);
+        const monthlyTotalB = monthlyPrincipalB + taxMonthlyYear1 + insMonthlyYear1;
+        const annualTotalB = monthlyTotalB * 12;
+        const ratioMonthlyB = sal_m > 0 ? (monthlyTotalB / sal_m) * 100 : 0;
+
+        setVal(IDS.termB_locked, `${termB} years (inherited from Part A)`);
+        setVal(IDS.statusB, "Executed — Part B calculated using 40% substitution");
+        setVal(IDS.costB_monthly, `${money(monthlyTotalB)} | ${pct(ratioMonthlyB)} of monthly income`);
+        setVal(IDS.costB_annual, `${money(annualTotalB)} | ${pct(ratioMonthlyB)} of annual income`);
+      }
+
+      function resetAll() {
+        [IDS.balance, IDS.monthlyPayment, IDS.monthlySalary, IDS.monthlyTax, IDS.monthlyInsurance].forEach(id => {
+          const el = $(id);
+          if (el) el.value = "";
+        });
+
+        setVal(IDS.currentRatioMonthly, "");
+        clearA(); clearB();
+
+        setText(IDS.summary_now_amount, `${money(0)} / month`);
+        setText(IDS.summary_now_pct, "—");
+        clearSummaryAfter();
+      }
+
+      // Attach LIVE masks (bank-style) - SAME as before
+      attachLiveMask(IDS.balance, { intOnly: false });
+      attachLiveMask(IDS.monthlyPayment, { intOnly: false });
+      attachLiveMask(IDS.monthlySalary, { intOnly: false });
+      attachLiveMask(IDS.monthlyTax, { intOnly: false });
+      attachLiveMask(IDS.monthlyInsurance, { intOnly: false });
+
+      // Reset
+      const resetBtn = $(IDS.resetBtn);
+      if (resetBtn) resetBtn.addEventListener("click", resetAll);
+
+      resetAll();
+    })();
+  </script>
 
 
 
